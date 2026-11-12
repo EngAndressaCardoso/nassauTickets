@@ -1,0 +1,202 @@
+ion-header{
+    background-color: #0E417F;
+    color:#fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap:12px;
+}
+
+ion-content {
+  --background: #F7FAFF;
+}
+
+/* FILTRO */
+.filtros {
+  margin-bottom: 16px;
+}
+
+.filtros ion-item {
+  --background: #FFFFFF;
+  --border-radius: 10px;
+  border: 1px solid #D9E2EC;
+  border-radius: 10px;
+}
+
+/* CARTÕES DE INDICADORES */
+.cards-resumo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.card-resumo {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  border: 1px solid #D9E2EC;
+}
+
+.card-resumo ion-icon {
+  font-size: 32px;
+}
+
+.emitidas ion-icon {
+  color: #0866E8;
+}
+
+.atendidas ion-icon {
+  color: #168653;
+}
+
+.card-resumo p {
+  margin: 0;
+  font-size: 13px;
+  color: #526579;
+}
+
+.card-resumo h2 {
+  margin: 6px 0 0;
+  font-size: 24px;
+  color: #0E417F;
+}
+
+/* CARTÕES DE QUANTIDADE POR PRIORIDADE */
+.card-relatorio {
+  background: #FFFFFF;
+  border: 1px solid #D9E2EC;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.card-relatorio h2 {
+  margin: 0 0 16px;
+  font-size: 17px;
+  color: #0E417F;
+}
+
+/* LEGENDA DAS PRIORIDADES */
+.legenda {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.legenda span {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.sp {
+  background: #FDE7EB;
+  color: #C62846;
+}
+
+.se {
+  background: #E3EEFF;
+  color: #0866E8;
+}
+
+.sg {
+  background: #DDF5E8;
+  color: #168653;
+}
+
+/* QUANTIDADE POR PRIORIDADE */
+.dados-prioridade {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.linha-dado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #243B53;
+  font-size: 14px;
+}
+
+.linha-dado strong {
+  color: #0E417F;
+}
+
+/* TEMPO MÉDIO DE ATENDIMENTO */
+.tempo-medio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px;
+  background: #E3EEFF;
+  border-radius: 10px;
+  color: #0E417F;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.tempo-medio ion-icon {
+  font-size: 32px;
+}
+
+/* TABELA DE DETALHAMENTO DE SENHA*/
+.tabela-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+th {
+  background: #E3EEFF;
+  color: #0E417F;
+  padding: 10px;
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #E3E8EF;
+  color: #526579;
+}
+
+.vazio {
+  text-align: center;
+  padding: 24px 10px;
+}
+
+/* RODAPÉ */
+ion-tab-bar {
+  --background: #ffffff;
+  --color: #7a869a;
+  --color-selected: #0d3b87;
+  --min-height: 76px;
+  border-top: 1px solid #e3e8f0;
+  align-items: center;
+}
+
+ion-tab-button {
+  min-height: 76px;
+  --padding-top: 8px;
+  --padding-bottom: 8px;
+}
+
+ion-tab-button ion-icon {
+  font-size: 28px;
+}
+
+ion-tab-button ion-label {
+  font-size: 14px;
+}

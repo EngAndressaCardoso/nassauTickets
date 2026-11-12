@@ -1,0 +1,152 @@
+<ion-header>
+  <h1>Relatórios</h1>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <!-- Filtros de período -->
+  <div class="filtros">
+    <ion-item>
+      <ion-label>Período</ion-label>
+      <ion-select placeholder="Selecionar">
+        <ion-select-option value="diario">
+          Diário
+        </ion-select-option>
+
+        <ion-select-option value="mensal">
+          Mensal
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
+  </div>
+
+  <div class="cards-resumo">
+    <div class="card-resumo emitidas">
+      <ion-icon name="ticket"></ion-icon>
+      <div>
+        <!-- quantitativo geral de senhas emitidas -->
+        <p>Senhas emitidas</p>
+        <h2>—</h2>
+      </div>
+    </div>
+
+    <div class="card-resumo atendidas">
+      <ion-icon name="checkmark-circle"></ion-icon>
+      <div>
+        <!-- quantitativo geral de senhas atendidas -->
+        <p>Senhas atendidas</p>
+        <h2>—</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- quantitativo de senhas emitidas por prioridade -->
+  <div class="card-relatorio">
+    <h2>Senhas emitidas por prioridade</h2>
+
+    <div class="legenda">
+      <span class="sp">SP</span>
+      <span class="se">SE</span>
+      <span class="sg">SG</span>
+    </div>
+
+    <div class="dados-prioridade">
+      <div class="linha-dado">
+        <span>Prioritária (SP)</span>
+        <strong>—</strong>
+      </div>
+
+      <div class="linha-dado">
+        <span>Retirada de Exames (SE)</span>
+        <strong>—</strong>
+      </div>
+
+      <div class="linha-dado">
+        <span>Geral (SG)</span>
+        <strong>—</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- quantitativo de senhas atendidas por prioridade -->
+  <div class="card-relatorio">
+    <h2>Senhas atendidas por prioridade</h2>
+
+    <div class="legenda">
+      <span class="sp">SP</span>
+      <span class="se">SE</span>
+      <span class="sg">SG</span>
+    </div>
+
+    <div class="dados-prioridade">
+      <div class="linha-dado">
+        <span>Prioritária (SP)</span>
+        <strong>—</strong>
+      </div>
+
+      <div class="linha-dado">
+        <span>Retirada de Exames (SE)</span>
+        <strong>—</strong>
+      </div>
+
+      <div class="linha-dado">
+        <span>Geral (SG)</span>
+        <strong>—</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tempo médio de atendimento-->
+  <div class="card-relatorio">
+    <h2>Tempo médio de atendimento</h2>
+
+    <div class="tempo-medio">
+      <ion-icon name="time"></ion-icon>
+      <span>— min</span>
+    </div>
+  </div>
+
+  <!-- relatório detalhado das senhas -->
+   <!--número da senha, tipo da senha, data e hora da emissão, data e hora do atendimento, guichê responsável. -->
+  <div class="card-relatorio">
+    <h2>Detalhamento das senhas</h2>
+
+    <div class="tabela-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Senha</th>
+            <th>Tipo</th>
+            <th>Emissão</th>
+            <th>Atendimento</th>
+            <th>Guichê</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td colspan="5" class="vazio">
+              Nenhum dado disponível.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</ion-content>
+
+<!-- Navegação inferior -->
+ <!-- Inicio -->
+<ion-footer class="ion-no-border">
+  <ion-tab-bar slot="bottom" selectedTab="inicio-atendente">
+    <ion-tab-button tab="login-atendente" routerLink="/inicio-atendente">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Inicio</ion-label>
+    </ion-tab-button>
+
+<!-- Aditoria -->
+   <ion-tab-button tab="auditoria" routerLink="/auditoria">
+      <ion-icon name="document"></ion-icon>
+      <ion-label>Auditoria</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-footer>

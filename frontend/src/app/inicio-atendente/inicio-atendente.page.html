@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-icon name="person"></ion-icon>
+
+  <div class="infos">
+    <h1> Olá, Ana!</h1>
+    <p>Bem-vinda à área do atendente</p>
+  </div>
+</ion-header>
+
+<ion-content>
+  <div class="menu">
+    <ion-button class="chamar" expand="block" routerLink="/chamar-proxima-senha">
+      <ion-icon name="arrow-forward"></ion-icon>
+      Chamar próxima senha
+    </ion-button>
+
+    <ion-button class="fila" expand="block" routerLink="/fila-atendimento">
+      <ion-icon name="people"></ion-icon>
+      Fila de atendimento
+    </ion-button>
+
+    <ion-button class="relatorios" expand="block" routerLink="/relatorios">
+      <ion-icon name="document"></ion-icon>
+      Relatórios
+    </ion-button>
+
+    <ion-button class="auditoria" expand="block" routerLink="/auditoria">
+      <ion-icon name="podium"></ion-icon>
+      Auditória
+    </ion-button>
+  </div>
+</ion-content>
+
+<!-- Deslogar -->
+<ion-footer class="ion-no-border">
+  <ion-tab-bar slot="bottom" selectedTab="login-atendente">
+    <ion-tab-button tab="login-atendente" routerLink="/login-atendente">
+      <ion-icon name="exit"></ion-icon>
+      <ion-label>Deslogar</ion-label>
+    </ion-tab-button>
+
+<!-- Ir para Painel -->
+    <ion-tab-button tab="painel" routerLink="/painel">
+      <ion-icon name="document"></ion-icon>
+      <ion-label>Painel</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-footer>

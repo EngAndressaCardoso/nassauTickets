@@ -24,11 +24,24 @@ const routes: Routes = [
     loadChildren: () => import('./login-atendente/login-atendente.module').then( m => m.LoginAtendentePageModule)
   },
   {
+    path: 'inicio-atendente',
+    loadChildren: () => import('./inicio-atendente/inicio-atendente.module').then( m => m.InicioAtendentePageModule)
+  },
+  {
     path: 'tabs',
     loadChildren: () =>
       import('./tabs/tabs.module')
         .then(m => m.TabsPageModule)
+  },
+  {
+    path: 'relatorios',
+    loadChildren: () => import('./relatorios/relatorios.module').then( m => m.RelatoriosPageModule)
+  },
+  {
+    path: 'auditoria',
+    loadChildren: () => import('./auditoria/auditoria.module').then( m => m.AuditoriaPageModule)
   }
+
 ];
 @NgModule({
   imports: [
