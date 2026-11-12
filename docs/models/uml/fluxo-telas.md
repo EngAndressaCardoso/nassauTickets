@@ -1,20 +1,20 @@
-TELA INICIAL  
+````
+TELA INICIAL   
 │  
-├── SOLICITAR SENHA  
-│   └── EMITIR SENHA  
+├── SOLICITAR SENHA   
+│   └── EMITIR SENHA   
 │       └── SENHA EMITIDA  
 │           └── PAINEL DE CHAMADAS  
 │  
-└── FAZER LOGIN  
-    └── LOGIN ATENDENTE  
+└── FAZER LOGIN   
+    └── LOGIN ATENDENTE   
         └── ÁREA ATENDENTE  
-            └── TABS  
-                ├── INÍCIO  
-                ├── FILA  
-                ├── ATENDIMENTOS  
-                │   ├── INICIAR ATENDIMENTO  
-                │   ├── ATENDIMENTO EM ANDAMENTO  
-                │   └── CHAMAR NOVAMENTE  
-                └── MAIS  
-                    ├── RELATÓRIOS  
-                    └── AUDITORIA  
+            └── INÍCIO  
+                ├── FILA DE ATENDIMENTO
+                ├── CHAMAR PROXIMA SENHA  
+                │   └── ATENDIMENTO  
+                │       ├── ATENDIMENTO EM ANDAMENTO  
+                │       └── CHAMAR NOVAMENTE    
+                ├── RELATÓRIOS  
+                └── AUDITORIA  
+````
